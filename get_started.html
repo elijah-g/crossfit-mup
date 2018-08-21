@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--- Start of head of website --->
+<head>
+    <meta charset="UTF-8">
+    <title>CrossFit Muscle Up</title>
+    <link rel="icon" href="img/crossfitlogo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="muscleup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Muli|Passion+One" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+
+
+<!--- Start of Body of website --->
+<body class = "background-cont get_started">
+
+<!--- Background container --->
+<div class = "background-cont">
+    <header>
+        <img src="img/logo.png" id="top_logo" alt ="CrossFit Muscle Up">
+
+        <div id ='cssmenu'>
+
+            <ul id="nav" class="">
+                <a href="javascript:void(0);" class="icon" id="icon" onclick="ShowMenu()"><i class="fa fa-bars"></i></a>
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li class="has-sub"><a href="#"><span>Our Box</span></a>
+                    <ul>
+
+                        <li class="has-sub"><a href="Time Table.html"><span>Time Table</span></a></li>
+                        <li class="has-sub"><a href="about_us.html"><span>About Us</span></a> </li>
+                        <li class="has-sub"><a href="competitions.html"><span>Competitions</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="about_crossfit.html"><span>About Crossfit</span></a></li>
+                <li class="active"><a href="get_started.html"><span>Get Started</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+
+        </div>
+
+
+    </header>
+
+
+
+
+<div class="page-content">
+<!--Page header-->
+<h1>Sign Me Up!!</h1>
+
+<p id = "sign_up">
+    At CrossFit Muscle Up, we want your fitness journey to be a long, successful and enjoyable one. As with all things
+    it’s important to “walk before you run” that’s why we make it our priority to assist with perfecting your technique
+    first through our beginner one on one sessions. If you’re ready to change your life and become your best self the
+    first step is to book below for your first session. The number and content of beginner sessions will be tailored
+    specifically to your needs.
+</p>
+
+<!--http://crossfitfirewall.com/events/crossfit/freetrialclass/-->
+<img id="get_started" alt="Getting Started "src="img/get_started.jpg" width="1024" height="455">
+
+<!--Form header-->
+<h3>Get Started</h3>
+
+<!--Form for viewer to sign up for beginner class-->
+<form>
+<table>
+    <tr>
+        <td class="text">First Name: </td><td><input type="text" name="first_name" placeholder=" First Name"></td>
+        <td class="text">Last Name: </td><td><input type="text" name="last_name" placeholder=" Last Name"></td>
+    </tr>
+
+    <tr>
+        <td class="text">Phone Number: </td><td><input type="text" name="number" placeholder=" Phone Number"></td>
+        <td>Available Start Date: </td><td><input type="date" name="date" placeholder=" Start Date"></td>
+    </tr>
+
+    <tr><td>Ideal Time: </td><td><select>
+        <option value="5:30am">5:30am</option>
+        <option value="6:30am">6:30am</option>
+        <option value="4:30pm">4:30pm</option>
+        <option value="5:30pm">5:30pm</option>
+    </select></td></tr>
+
+    <tr><td>How did you hear about us?</td><td>    <input type="radio" name="how" value="Facebook">Facebook
+        <input type="radio" name="how" value="Friend">Friend
+        <input type="radio" name="how" value="Internet">Internet
+        <input type="radio" name="how" value="Other">Other</td></tr>
+
+    <tr><td></td><td id="submit"><input type="submit" value="Submit"></td></tr>
+</table>
+</form>
+
+
+</div>
+</div>
+
+<!-m-- Start of Footer of website --->
+<footer>
+    <p>&copy; Elijah Glass 2018 <br><br>
+        <i>This website has been created as part of an assignment in an approved course of study for Curtin University and
+            contains copyright material not created by the author. All copyright material used remains copyright of the
+            respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia).
+            No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.
+        </i>
+
+    </p>
+</footer>
+
+</body>
+
+
+</html>

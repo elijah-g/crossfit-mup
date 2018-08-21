@@ -1,0 +1,527 @@
+.background-cont{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+
+#cssmenu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#cssmenu li {
+    margin: 0;
+    padding: 0;
+}
+
+#cssmenu a {
+    margin: 0;
+    padding: 0;
+}
+
+#cssmenu ul {
+    border-radius: 12px;
+    list-style: none;
+    display: inline-block;
+    list-style-type: none;
+    width:80%;
+    background: linear-gradient(#cbc6c6,#474545);
+
+}
+
+#cssmenu a {
+    text-decoration: none;
+}
+
+#cssmenu {
+
+    /* This is for the main menu bit at the top */
+    width: 100%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 2px;
+    line-height: normal;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#cssmenu>ul>li {
+    display: inline-block;
+    margin-left: 15px;
+    /* This is when the drop down box appears */
+    position: relative;
+}
+
+#cssmenu>ul>li>a {
+
+
+    font-size: 14px;
+    line-height: 45px;
+    color: black;
+
+    /* This bit chances the size of the text on the main heading */
+    padding: 15px 24px;
+    /* This is the padding between the different titles */
+    -webkit-transition: color .15s;
+    -moz-transition: color .15s;
+    -o-transition: color .15s;
+    transition: color .15s;
+}
+
+
+
+#cssmenu>ul>li>a:hover {
+    color: rgb(250, 250, 250);
+}
+
+#cssmenu>ul>li>ul {
+    opacity: 0;
+    visibility: hidden;
+    padding: 16px 0 20px 0;
+    /*background-color: rgb(250, 250, 250);*/
+    text-align: left;
+    /* This is for the text when box is dropped down, centered isnt always totally in the middle so best to have on the left */
+    position: absolute;
+    top: 55px;
+    /*/* This is for the drop down annimation */
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+    -webkit-transition: all .3s .1s;
+    -moz-transition: all .3s .1s;
+    -o-transition: all .3s .1s;
+    transition: all .3s .1s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, .4);
+    -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, .4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .4);
+}
+
+#cssmenu>ul>li:hover>ul {
+    opacity: 1;
+    top: 50px;
+    /* This is how far from the top the drop down annimation will go  */
+    visibility: visible;
+}
+
+#cssmenu>ul ul>li {
+    position: relative;
+}
+
+#cssmenu ul ul a {
+    /* This is the drop down menu, change font or size when its drops down */
+    color: black;
+
+    font-size: 14px;
+    /*background-color: rgb(250, 250, 250);*/
+    padding: 5px 8px 7px 16px;
+    display: block;
+    -webkit-transition: background-color .1s;
+    -moz-transition: background-color .1s;
+    -o-transition: background-color .1s;
+    transition: background-color .1s;
+}
+
+#cssmenu ul ul a:hover {
+    /*background-color: rgb(240, 240, 240);*/
+}
+
+#cssmenu ul ul>li:hover>ul {
+    opacity: 1;
+    left: 196px;
+    visibility: visible;
+}
+
+#cssmenu ul ul a:hover {
+    /*background-color: rgb(114, 164, 65);*/
+    color: rgb(240, 240, 240);
+}
+
+#wrapper #page #page-bgtop #page-bgbtm #content .post .entry table tr td {
+    text-align: center;
+}
+
+
+
+
+
+
+
+#top_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding-top: 10px;
+}
+
+/*li:hover{*/
+    /*color: black;*/
+    /*background: linear-gradient(#cbc6c6,#474545);*/
+/*}*/
+
+@media screen and (min-width: 801px) {
+     #icon {
+        display:none;
+    }
+    .view-sub{
+
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #cssmenu li:not(.icon) {display: none;}
+    #icon {
+        float: right;
+        display: block;
+
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+    #cssmenu .icon{
+        display: block;
+        padding-right: 20px;
+        padding-top: 10px;
+        color: black;
+    }
+
+    /*#cssmenu>ul>li>ul {*/
+        /*display: inline-block;*/
+    /*}*/
+
+    /*#cssmenu {*/
+        /*position: relative;*/
+
+    /*}*/
+
+    #cssmenu ul{
+        min-height:40px;
+    }
+
+    .responsive ul{
+        height:auto;
+    }
+
+    #cssmenu>ul>li:hover>ul {
+
+        position: relative;
+        top:0;
+        display: block;
+        opacity: 1;
+
+        /* This is how far from the top the drop down annimation will go  */
+        visibility: visible;
+    }
+
+    #cssmenu .responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+        border-radius: 12px;
+        margin-right: 5%;
+    }
+
+    .responsive{
+        height:auto;
+    }
+
+
+    #cssmenu .responsive .icon{
+        /*display:none;*/
+        padding-bottom: 20px;
+     }
+
+
+
+
+
+}
+
+footer{
+    padding: 10px;
+    margin-top: 50px;
+    color: #cbc6c6;
+    text-align: center;
+    /*border-top: 2px dashed white;*/
+    border-radius: 12px;
+    background-color: #474545;
+    width: 90%;
+    margin: auto;
+    font-size: 11px;
+    clear:both;
+}
+
+
+/*Styling for each text element*/
+h1{
+    color: white;
+    font-family: 'Passion One', cursive;
+
+}
+
+h2{
+    font-family: 'Passion One', cursive;
+    font-size: 30px;
+}
+
+p{
+    font-family: 'Muli', sans-serif;
+}
+
+h3{
+    font-family: 'Passion One', cursive;
+    font-size: 30px;
+}
+
+
+/*Styling specific to the Index page*/
+#strongman{
+    width: 100%;
+    height:auto;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.float-bottom-left{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+
+}
+
+.float-header{
+
+}
+
+.float-bottom-left h2{
+    text-align: left;
+    color: white;
+    padding-left: 5px;
+    margin-bottom: -10px;
+}
+
+.float-bottom-left p{
+    background-color: #cbc6c6;
+    opacity:0.7;
+    text-align: left;
+    width: 50%;
+    padding: 10px;
+    border-radius: 12px;
+
+}
+
+
+/*Styling specific to the what is crossfit page*/
+.light-gray{
+    color: lightgray;
+
+}
+
+.light-gray {
+    /*float:left;*/
+    /*background-color: gray;*/
+    /*width: 80%;*/
+    margin: auto;
+    /*text-align: center;*/
+    padding-bottom: 10px;
+}
+
+.about-crossfit h1{
+
+    padding-top: 50px;
+}
+
+#about_crossfit_img{
+
+    padding:15px 15px 15px 0px;
+    width:50%;
+    height:auto;
+    margin: auto;
+    text-align: center;
+    float: left;
+    max-width: 600px;
+}
+
+#about{
+    padding-bottom: 25px;
+
+}
+
+#about p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#about p::first-letter{
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Passion One', cursive;
+    letter-spacing: 3px;
+}
+
+
+
+/*Styling specific to get started page*/
+.get_started h3{
+    color: white;
+    margin-bottom: 0px;
+    clear:both;
+    padding-top: 30px;
+}
+
+#sign_up{
+    color: lightgray;
+    width: 50%;
+    float:left;
+}
+
+.get_started form{
+    background-color: #cbc6c6;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    width: 100%;
+    height:auto;
+    /*float: left;*/
+    clear:both;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+}
+
+
+.get_started form>input{
+    width:30%;
+}
+
+
+.get_started input[type="date"]{
+    font-family: 'Muli', sans-serif;
+}
+
+.get_started input[type="radio"]{
+    width:20px;
+
+}
+
+.get_started input[type='text']{
+    border-radius: 12px;
+
+}
+
+.get_started input[type='date']{
+    border-radius: 12px;
+}
+
+.get_started form>p{
+    float: left;
+    padding-right: 10px;
+}
+
+
+#get_started{
+    width: 49%;
+    height:auto;
+    float: right;
+}
+
+.get_started>form>p{
+    color: #474545;
+
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    html>body>div {
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 999px){
+    .page-content{
+        width:80%;
+        margin:auto;
+    }
+}
+
+td{
+    padding-bottom: 20px;
+}
+
+#submit{
+    text-align: right;
+    padding-top: 20px;
+}
+
+#submit>input{
+    color:white;
+    background-color: black;
+    width: 50%;
+    border-radius: 12px;
+    height: 40px;
+    font-family: 'Passion One', cursive;
+    font-size: 18px;
+}
+
+
+/*Styling specific to contact.html*/
+
+.contact-us p{
+    color: #cbc6c6;
+}
+
+.contact-us h3{
+    color: white;
+}
+
+.contact-us li{
+    font-family: 'Muli', sans-serif;
+    color: #cbc6c6;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#contact_details{
+    border:2px solid white;
+    border-radius: 12px;
+    width:40%;
+    float:right;
+}
+
+iframe{
+    width:59%;
+    float:left;
+}
+
+#contact_form{
+    clear:both;
+}
+
+.fa-facebook{
+    color:#6d85ff;
+    padding: 10px;
+    float:left;
+    font-weight: lighter;
+}
+
+.fa-instagram{
+    color:#6d85ff;
+    padding: 10px;
+
+
+    font-weight: lighter;
+}
+
